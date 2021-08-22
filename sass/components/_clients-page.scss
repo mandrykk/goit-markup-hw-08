@@ -1,0 +1,73 @@
+.clients {
+  margin-bottom: 50px;
+
+  &__list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    cursor: pointer;
+    padding: 16px 32px;
+    border: 1px solid $border-clients-section;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__link:hover,
+  &__link:focus {
+    background-color: $white-text;
+    border-color: $accent-color;
+  }
+
+  &__link:hover > svg,
+  &__link:focus > svg {
+    fill: $accent-color;
+  }
+
+  &__icons {
+    fill: $border-clients-section;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__icons:hover {
+    fill: $accent-color;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .clients {
+    margin-bottom: 30px;
+  }
+
+  .clients__list {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .clients__item:not(:last-child) {
+    margin-right: 0;
+  }
+  .clients__item {
+    margin-bottom: 30px;
+  }
+
+  .clients__link {
+    width: 180px;
+  }
+}

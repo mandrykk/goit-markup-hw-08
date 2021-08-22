@@ -1,0 +1,12 @@
+.logo {
+  margin-right: 93px;
+  font-family: $logo-font-family;
+  letter-spacing: 0.03em;
+  font-size: 26px;
+  line-height: 1.2;
+  color: $title-text-color;
+
+  &__accent {
+    color: $accent-color;
+  }
+}

@@ -1,0 +1,127 @@
+.mobile-menu {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  position: absolute;
+  right: 15px;
+
+  &__list {
+    padding: 0;
+  }
+
+  &__item {
+    margin-bottom: 32px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+    color: $title-text-color;
+
+    &:hover {
+      color: $accent-color;
+    }
+  }
+
+  &__contacts {
+    margin-top: 302px;
+    padding: 0;
+  }
+
+  &__tel {
+    margin-bottom: 32px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+  }
+
+  &__mail {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+  }
+
+  &__medias {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 64px;
+    padding: 0;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: $accent-color;
+  }
+}
+
+.mobile-decore {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.mobile__tel-link {
+  color: $accent-color;
+}
+.mobile-menu .icon-cross {
+  display: none;
+}
+
+.mobile-menu.is-open .icon-cross {
+  display: block;
+}
+
+.mobile-menu.is-open .icon-menu {
+  display: none;
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  padding: 32px;
+  z-index: 999;
+  background-color: $white-text;
+
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-toggle {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
+}
+
+@media (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+
+  .menu-container {
+    display: none;
+  }
+}

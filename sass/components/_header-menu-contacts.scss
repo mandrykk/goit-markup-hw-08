@@ -1,0 +1,37 @@
+.site-contacts {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  font-size: 14px;
+  line-height: 1.1;
+
+  &__list:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.site-contacts__mail-link,
+.site-contacts__tel-link {
+  display: flex;
+  align-items: center;
+  color: $primary-text-color;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    color: $accent-color;
+  }
+}
+
+.site-contacts__icon-envelope,
+.site-contacts__icon-phone {
+  margin-right: 10px;
+  fill: currentColor;
+
+  &:hover,
+  &:focus {
+    fill: currentColor;
+  }
+}

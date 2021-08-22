@@ -1,0 +1,37 @@
+.footer-address {
+  font-family: $main-font-family, sans-serif;
+  font-style: normal;
+
+  &__list {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+
+  &__map {
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    font-size: 14px;
+    line-height: 1.7;
+    color: $white-text;
+  }
+
+  &__mail {
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    font-size: 14px;
+    line-height: 1.7;
+    color: $footer-contacts-list;
+  }
+
+  &__tel {
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    font-size: 14px;
+    line-height: 1.7;
+    color: $footer-contacts-list;
+  }
+}
