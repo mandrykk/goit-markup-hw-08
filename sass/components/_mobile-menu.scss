@@ -22,10 +22,6 @@
     line-height: 47px;
     letter-spacing: 0.02em;
     color: $title-text-color;
-
-    &:hover {
-      color: $accent-color;
-    }
   }
 
   &__contacts {
@@ -63,6 +59,17 @@
     letter-spacing: 0.02em;
     color: $accent-color;
   }
+
+  &__link {
+    color: $title-text-color;
+    &:hover {
+      color: $accent-color;
+    }
+  }
+}
+
+.mobile-menu__link.active {
+  color: $accent-color;
 }
 
 .mobile-decore {
@@ -89,7 +96,7 @@
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100%;
+  height: 100vh;
   padding: 32px;
   z-index: 999;
   background-color: $white-text;
