@@ -1,8 +1,5 @@
 .footer-form {
-  margin-left: 93px;
-
   &__title {
-    margin-left: 93px;
     margin-bottom: 20px;
   }
 
@@ -68,5 +65,15 @@
 
   .footer-form__button {
     margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form {
+    margin-left: 93px;
+  }
+
+  .footer-form__title {
+    margin-left: 93px;
   }
 }

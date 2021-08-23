@@ -1,5 +1,7 @@
-.footer-social-networks {
-  margin-left: 70px;
+@media screen and (min-width: 1200px) {
+  .footer-social-networks {
+    margin-left: 70px;
+  }
 }
 
 .footer-networks {
@@ -51,7 +53,7 @@
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .footer-social-networks {
     margin-right: auto;
     margin-left: auto;
