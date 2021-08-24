@@ -45,16 +45,15 @@
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .clients {
     margin-bottom: 30px;
   }
 
   .clients__list {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -30px;
-    justify-content: space-between;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
   }
 
   .clients__item:not(:last-child) {
@@ -63,7 +62,6 @@
   .clients__item {
     margin-bottom: 30px;
     margin-left: 30px;
-    flex-basis: calc((100% - 45px * 2) / 2);
   }
 
   .clients__link {

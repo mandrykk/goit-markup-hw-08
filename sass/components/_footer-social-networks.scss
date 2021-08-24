@@ -1,9 +1,3 @@
-@media screen and (min-width: 1200px) {
-  .footer-social-networks {
-    margin-left: 70px;
-  }
-}
-
 .footer-networks {
   color: $white-text;
   background-color: $footer-networks-color;
@@ -62,5 +56,11 @@
 
   .footer-networks__title {
     text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-social-networks {
+    margin-left: 70px;
   }
 }
