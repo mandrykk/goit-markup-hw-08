@@ -596,7 +596,7 @@ textarea::placeholder {
         -ms-flex-pack: center;
             justify-content: center;
     position: absolute;
-    top: 30%;
+    top: 25%;
   }
 }
 
@@ -682,7 +682,7 @@ textarea::placeholder {
 
 @media screen and (max-width: 767px) {
   .modal {
-    min-width: 450px;
+    min-width: 420px;
     min-height: 609px;
   }
   .backdrop {
