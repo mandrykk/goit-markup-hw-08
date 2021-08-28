@@ -48,7 +48,7 @@
 
   &__medias {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 64px;
     padding: 0;
 
@@ -66,6 +66,15 @@
       color: $accent-color;
     }
   }
+
+  &__networks {
+    padding-right: 7px;
+    padding-left: 7px;
+  }
+
+  &__networks:not(:last-child) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+  }
 }
 
 .mobile-menu__link.active {
@@ -73,7 +82,6 @@
 }
 
 .mobile-decore {
-  margin-left: 10px;
   border: 1px solid rgba(33, 33, 33, 0.2);
 }
 
