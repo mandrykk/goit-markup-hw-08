@@ -5,10 +5,6 @@
   letter-spacing: 0.02em;
   font-size: 14px;
   line-height: 1.1;
-
-  &__list:not(:last-child) {
-    margin-right: 50px;
-  }
 }
 
 .site-contacts__mail-link,
@@ -44,5 +40,11 @@
 
   .site-contacts__list {
     margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .site-contacts__list:not(:last-child) {
+    margin-right: 50px;
   }
 }

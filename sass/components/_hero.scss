@@ -62,7 +62,11 @@
   }
 
   .hero__block {
-    margin: -80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: absolute;
+    top: 30%;
   }
 }
 
@@ -73,7 +77,11 @@
   }
 
   .hero__block {
-    margin: -85px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: absolute;
+    top: 30%;
   }
 
   @media (min-device-pixel-ratio: 2),
